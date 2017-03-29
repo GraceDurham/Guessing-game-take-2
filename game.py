@@ -22,4 +22,9 @@ while True:
         
         else:
             print "Well done, %s! You found my number in %s tries." % (name,number_guesses)
-            break
+            answer = raw_input("Would you like to play again?")
+            if answer == "n" or answer =="no":
+                print "Sorry to hear that lets play next time."
+                break
+            else:
+                continue
